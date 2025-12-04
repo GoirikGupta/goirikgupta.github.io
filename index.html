@@ -3,38 +3,288 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Goirik Gupta | Website Under Construction</title>
+  <title>Goirik Gupta | Psychological & Brain Sciences</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      text-align: center;
-      background-color: #fafafa;
-      color: #333;
       margin: 0;
       padding: 0;
+      line-height: 1.6;
+      background-color: #fafafa;
+      color: #222;
+    }
+
+    header {
+      background-color: #003366;
+      color: #fff;
+      padding: 1rem 1.5rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .header-inner {
+      max-width: 900px;
+      margin: 0 auto;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      height: 100vh;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
     }
-    h1 {
+
+    header h1 {
+      margin: 0;
+      font-size: 1.4rem;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 0.9rem;
+      opacity: 0.9;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 0.75rem;
+      font-size: 0.9rem;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 1.5rem auto 2.5rem;
+      padding: 0 1rem;
+    }
+
+    section {
+      background-color: #fff;
+      margin-bottom: 1.5rem;
+      padding: 1.5rem;
+      border-radius: 6px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.08);
+    }
+
+    section h2 {
+      margin-top: 0;
       color: #003366;
+      font-size: 1.25rem;
+      border-bottom: 1px solid #e0e0e0;
+      padding-bottom: 0.3rem;
+      margin-bottom: 0.75rem;
     }
-    footer {
-      position: absolute;
-      bottom: 10px;
-      width: 100%;
-      font-size: 0.9em;
+
+    .about-layout {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-color: #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      color: #666;
+      flex-shrink: 0;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    li + li {
+      margin-top: 0.35rem;
+    }
+
+    .tagline {
+      font-style: italic;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtle {
+      font-size: 0.9rem;
       color: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #003366;
+      color: #fff;
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.1rem;
+      }
+      nav {
+        width: 100%;
+        margin-top: 0.5rem;
+      }
+      nav a {
+        margin-left: 0;
+        margin-right: 0.75rem;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>🚧 Website Under Construction 🚧</h1>
-  <p>Hello, and thanks for visiting!<br>
-     I’m currently building my personal website.<br>
-     Please check back soon.</p>
-  <p>— <strong>Goirik Gupta</strong></p>
-  <footer>&copy; 2025 Goirik Gupta</footer>
+  <header>
+    <div class="header-inner">
+      <div>
+        <h1>Goirik Gupta</h1>
+        <p>PhD Candidate · Psychological &amp; Brain Sciences · UC Santa Barbara</p>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#cv">CV</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About</h2>
+      <div class="about-layout">
+        <div class="profile-pic">
+          Add headshot<br>here
+        </div>
+        <div>
+          <p class="tagline">
+            I study how hormones shape within-person variation in voice, face, and other social signals across the menstrual cycle.
+          </p>
+          <p>
+            I am a PhD candidate in the Developmental and Evolutionary Psychology program
+            in the Department of Psychological &amp; Brain Sciences at UC Santa Barbara,
+            advised by Prof. James Roney. My research focuses on hormonal correlates of
+            within-woman shifts in attractiveness cues (voice, face, odor) and their
+            implications for mate choice and close relationships.
+          </p>
+          <p class="subtle">
+            I am currently completing my dissertation and will be on the academic job market / seeking postdoctoral positions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section id="research">
+      <h2>Research</h2>
+      <p>
+        Broadly, my work sits at the intersection of evolutionary psychology and behavioral endocrinology.
+        Ongoing projects include:
+      </p>
+      <ul>
+        <li>
+          <strong>Voice attractiveness across the menstrual cycle</strong> – testing whether within-woman
+          variation in vocal cues tracks ovarian hormones and fertile window timing.
+        </li>
+        <li>
+          <strong>Facial attractiveness and cycle phase</strong> – assessing subtle shifts in perceived
+          facial attractiveness across the cycle using ranking and rating designs.
+        </li>
+        <li>
+          <strong>Daily hormonal dynamics and sociosexual psychology</strong> – modeling how day-to-day
+          changes in estradiol and progesterone relate to desire, jealousy, and relationship-relevant emotions.
+        </li>
+      </ul>
+      <p class="subtle">
+        Methodological interests: mixed-effects models, ROC/AUC analyses, and meta-analytic approaches for
+        intensive longitudinal and nested designs.
+      </p>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section id="publications">
+      <h2>Publications</h2>
+      <p class="subtle">
+        *Indicates equal contribution. Links to preprints and data/code will be added soon.
+      </p>
+      <ul>
+        <li>
+          Gupta, G., &amp; Roney, J. R. (2024). 
+          <em>[Title of your main voice paper]</em>. 
+          <span>Hormones and Behavior.</span>
+          <!-- Replace # with actual link -->
+          [<a href="#" target="_blank" rel="noopener">Publisher</a>] 
+          [<a href="#" target="_blank" rel="noopener">Preprint</a>]
+        </li>
+        <li>
+          Roney, J. R., Gupta, G., &amp; Mei, X. (2021).
+          <em>Progesterone</em>. In <em>Encyclopedia of Evolutionary Psychological Science</em>.
+          Springer.
+        </li>
+        <!-- Add more as needed -->
+      </ul>
+    </section>
+
+    <!-- TEACHING -->
+    <section id="teaching">
+      <h2>Teaching &amp; Mentoring</h2>
+      <p>
+        I have served as a Teaching Assistant and mentor in the Department of Psychological &amp; Brain Sciences
+        at UCSB, supporting both large introductory courses and advanced lab-based classes.
+      </p>
+      <ul>
+        <li><strong>PSY 10B: Statistical Methods</strong> – Teaching Assistant</li>
+        <li><strong>PSY 120L: [Course Title]</strong> – Teaching Assistant</li>
+        <li><strong>Undergraduate research mentoring</strong> – Supervision of URCA projects and RA teams
+            on hormone–behavior and attractiveness projects.</li>
+      </ul>
+    </section>
+
+    <!-- CV -->
+    <section id="cv">
+      <h2>CV</h2>
+      <p>
+        You can download my current CV here:
+        <!-- Replace cv.pdf with your actual file name once you upload it -->
+        <a href="cv.pdf" target="_blank" rel="noopener">Download CV (PDF)</a>
+      </p>
+      <p class="subtle">
+        Last updated: [add date here]
+      </p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        The best way to reach me is via email:
+        <br>
+        <strong>goirikgupta [at] ucsb [dot] edu</strong>
+      </p>
+      <p>
+        Elsewhere:
+      </p>
+      <ul>
+        <li>Google Scholar: [add link]</li>
+        <li>ORCID: [add link]</li>
+        <li>GitHub: <a href="https://github.com/goirikgupta" target="_blank" rel="noopener">github.com/goirikgupta</a></li>
+        <!-- Add OSF, LinkedIn, etc. if you like -->
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Goirik Gupta · Psychological &amp; Brain Sciences · UC Santa Barbara
+  </footer>
 </body>
 </html>
